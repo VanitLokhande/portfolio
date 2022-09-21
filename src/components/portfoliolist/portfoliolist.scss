@@ -1,0 +1,19 @@
+@import "../../globle.scss";
+
+portfoliolist{
+        
+    font-size: 20px;
+    margin-right: 50px;
+    padding: 8px;
+    &::-webkit-scrollbar{
+        display: none;
+
+    }
+    border-radius: 5px;
+    cursor: pointer;
+
+    &.active{
+        background-color:$mainColour;
+        color: white;
+    }
+}

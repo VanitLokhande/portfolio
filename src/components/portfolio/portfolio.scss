@@ -1,0 +1,94 @@
+@import "../../globle.scss";
+
+.portfolio{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    h1{
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+    h3{
+        font-size: 30px;
+    }
+    ul{
+        display: flex;
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        li{
+        
+        font-size: 20px;
+        margin-right: 50px;
+        padding: 8px;
+        &::-webkit-scrollbar{
+            display: none;
+
+        }
+        border-radius: 5px;
+        cursor: pointer;
+
+        &.active{
+            background-color:$mainColour;
+            color: white;
+        }
+    }
+}
+    .container{
+        background-color: white;
+        width:70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .item{
+            width: 300px;
+            border-radius: 10px;
+            height:250px ;
+            margin: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transition: all .5s ease;
+            &::-webkit-scrollbar{
+                display: none;
+    
+            }
+            cursor: pointer;
+
+            h3{
+                position: absolute;
+                font-size: 20px;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 1;
+                
+               
+
+
+            }
+
+            &:hover{
+                background-color: $mainColour;
+                img{
+                    opacity: 0.1;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+}
